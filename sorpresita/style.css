@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle,#ffffff,#fe77c9,#f072be, #961c38);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;  
+    max-width: 500px;
+    margin: 20px;
+   
+}
+
+.container .texto{
+    color: #030303; 
+    font-size: 24px; 
+    -webkit-text-stroke: 1px #4a0e17; 
+}
+
+.container .tenor-gif-embed {
+    display: flex;
+    max-width: 200px;
+}
+
+
+.container .btn {
+    padding-top: 35px;
+    display: flex;
+    gap: 25px;
+    color: #ffffff;
+    -webkit-text-stroke: 1.5px #f8f8f8; 
+}
+
+.btn a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 75px;
+    border-radius: 8px;
+    user-select: none;
+    cursor: pointer;
+    border: solid 0px #fff;
+    color: #ffffff;
+    
+    /* GRADIENTE DEL BOTÓN */
+    background: linear-gradient(90deg, #4a0e17, #721c24, #b21f2d);
+    background-size: 200% 100%;
+    background-position: 100%;
+    
+    box-shadow: 0.5rem 1rem 3rem rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn a:hover {
+    background-position: 0%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25), inset 0px -2px 0px rgba(255, 255, 255, 0.2);
+}
+
+.btn a:active {
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+.btn a:disabled {
+    pointer-events: none;
+    opacity: .65;
+    color: #7e7e7e;
+    box-shadow: none;
+    background: #dcdcdc;
+}
